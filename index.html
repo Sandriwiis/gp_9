@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p9</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --azuloscuro: #333f4f;
+            --azulclaro: #8ea9db;
+            --gris: #a6a6a6;
+            --fondo: #d7e6ff;
+        }
+        body{
+            background-color: var(--fondo);
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(16, 1fr);
+            grid-template-rows: repeat(40, 1fr);
+        }
+        #nom, #insta{
+            color: white;
+        }
+        #nom{
+            grid-column: 8/10;
+            grid-row: 7/10;
+        }
+        #insta{
+            grid-row: 8/9;
+            grid-column: 8/9;
+        }
+        #ordinador{
+            background-color: var(--azuloscuro);
+            grid-column: 7/11;
+            grid-row: 4/40;
+        }
+        #pantalla{
+            background-color: var(--azulclaro);
+            grid-column: 8/10;
+            grid-row: 7/17;
+        }
+        #teclat{
+            background-color: var(--gris);
+            grid-column: 7/8;
+            grid-row: 22/26;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="ordinador"></div>
+        <div id="pantalla"></div>
+        <div id="teclat"></div>
+        <div id="nom"><a>Sandra Pla</a></div>
+        <div id="insta"><a href="https://www.instagram.com/sandraa_pla/">@sandraa_pla</a></div>
+        </div>
+</body>
+</html>
